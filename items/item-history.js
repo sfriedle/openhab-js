@@ -4,6 +4,10 @@ const PersistenceExtensions = Java.type('org.openhab.core.persistence.extensions
 const DateTime = Java.type('java.time.ZonedDateTime');
 
 /**
+ * @typedef {import('@js-joda/core').ZonedDateTime} ZonedDateTime
+ */
+
+/**
  * Class representing the historic state of an openHAB Item.
  * Wrapping the {@link https://www.openhab.org/javadoc/latest/org/openhab/core/persistence/extensions/persistenceextensions PersistenceExtensions}.
  *
