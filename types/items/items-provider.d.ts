@@ -13,7 +13,7 @@ declare class ManagedItemProvider extends AbstractProvider {
     add(item: any): void;
     remove(itemOrName: any): void;
     update(item: any): void;
-    getAll(): java.util.Set;
+    getAll(): HostSet;
 }
 declare class StaticCallbackItemProvider extends AbstractProvider {
     constructor();
@@ -21,7 +21,7 @@ declare class StaticCallbackItemProvider extends AbstractProvider {
     addProviderChangeListener(listener: any): void;
     removeProviderChangeListener(listener: any): void;
     addItemsCallback(callback: any): void;
-    getAll(): java.util.List;
+    getAll(): HostList;
 }
 import { AbstractProvider } from "../provider";
 export function staticItemProvider(items: HostItem[]): StaticItemProvider;

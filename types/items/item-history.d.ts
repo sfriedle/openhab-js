@@ -1,5 +1,8 @@
 export = ItemHistory;
 /**
+ * @typedef {import('@js-joda/core').ZonedDateTime} ZonedDateTime
+ */
+/**
  * Class representing the historic state of an openHAB Item.
  * Wrapping the {@link https://www.openhab.org/javadoc/latest/org/openhab/core/persistence/extensions/persistenceextensions PersistenceExtensions}.
  *
@@ -242,4 +245,8 @@ declare class ItemHistory {
      */
     private _decimalOrNull;
 }
+declare namespace ItemHistory {
+    export { ZonedDateTime };
+}
+type ZonedDateTime = import('@js-joda/core').ZonedDateTime;
 //# sourceMappingURL=item-history.d.ts.map

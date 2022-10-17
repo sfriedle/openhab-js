@@ -11,7 +11,7 @@ declare class StaticCallbackMetadataProvider extends AbstractProvider {
     addProviderChangeListener(listener: any): void;
     removeProviderChangeListener(listener: any): void;
     addMetadataCallback(callback: any): void;
-    getAll(): java.util.List;
+    getAll(): HostList;
 }
 import { AbstractProvider } from "../provider";
 export {};
