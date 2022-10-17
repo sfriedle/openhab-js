@@ -23,7 +23,8 @@
         "lint": "npx standardx | snazzy",
         "lint:fix": "npx standardx --fix",
         "webpack": "webpack",
-        "types": "tsc"
+        "types": "tsc",
+        "types:test": "tsc --project tsconfig.test.json"
     },
     "devDependencies": {
         "acorn": "^8.6.0",
